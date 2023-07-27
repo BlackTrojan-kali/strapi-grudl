@@ -68,7 +68,7 @@
     "about": {
       "type": "richtext",
       "default": "hello there",
-      "required": true,
+      "required": false,
       "maxLength": 120
     },
     "avatar_url": {
@@ -79,21 +79,16 @@
       "type": "string",
       "regex": " [(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
     },
-    "twitter_username": {
-      "type": "string",
-      "unique": true
-    },
-    "linkedin_username": {
-      "type": "string",
-      "unique": true
-    },
-    "github_username": {
-      "type": "string",
-      "unique": true
-    },
     "profile_slug": {
       "type": "uid",
       "targetField": "username"
+    },
+    "phone": {
+      "type": "integer",
+      "required": false
+    },
+    "address": {
+      "type": "text"
     }
   }
 }
