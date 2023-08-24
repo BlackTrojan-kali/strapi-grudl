@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commands",
+  "info": {
+    "singularName": "command",
+    "pluralName": "commands",
+    "displayName": "command",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CommanderName": {
+      "type": "string"
+    },
+    "CommandName": {
+      "type": "string"
+    },
+    "commanderNumber": {
+      "type": "integer"
+    },
+    "CommderAddress": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "ProductList": {
+      "type": "json"
+    }
+  }
+}

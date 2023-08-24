@@ -89,6 +89,11 @@
     },
     "address": {
       "type": "text"
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation"
     }
   }
 }

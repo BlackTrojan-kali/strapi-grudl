@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "reservation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "VIP": {
+      "type": "boolean"
+    },
+    "date_de_depart": {
+      "type": "date"
+    },
+    "hour": {
+      "type": "time"
+    },
+    "ticket_code": {
+      "type": "uid"
+    }
+  }
+}

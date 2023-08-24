@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agencies",
+  "info": {
+    "singularName": "agency",
+    "pluralName": "agencies",
+    "displayName": "agency",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "agencyMail": {
+      "type": "email"
+    },
+    "hours": {
+      "type": "enumeration",
+      "enum": [
+        "morning",
+        "noon",
+        "evening"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "integer"
+    },
+    "constantVip": {
+      "type": "integer"
+    },
+    "allerSimple": {
+      "type": "boolean"
+    },
+    "destination": {
+      "type": "enumeration",
+      "enum": [
+        "douala-yaounde",
+        "yaounde-douala"
+      ]
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation"
+    }
+  }
+}
