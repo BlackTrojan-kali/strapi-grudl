@@ -12,25 +12,32 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CommanderName": {
+    "Acheteur": {
       "type": "string"
     },
-    "CommandName": {
-      "type": "string"
-    },
-    "commanderNumber": {
+    "numero": {
       "type": "integer"
     },
-    "CommderAddress": {
+    "Address": {
       "type": "string"
-    },
-    "products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product.product"
     },
     "ProductList": {
       "type": "json"
+    },
+    "Ville": {
+      "type": "string"
+    },
+    "Total": {
+      "type": "integer"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "State": {
+      "type": "boolean"
+    },
+    "IDCommand": {
+      "type": "uid"
     }
   }
 }
