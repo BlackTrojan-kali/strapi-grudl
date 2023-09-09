@@ -94,6 +94,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::reservation.reservation"
+    },
+    "reserved": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reserved.reserved",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

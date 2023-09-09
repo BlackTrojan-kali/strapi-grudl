@@ -30,6 +30,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::reservation.reservation"
+    },
+    "AgencyMail": {
+      "type": "email"
+    },
+    "reservation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reservation.reservation",
+      "mappedBy": "agency"
     }
   }
 }

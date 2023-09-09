@@ -12,17 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Destination": {
+      "type": "string"
+    },
     "VIP": {
       "type": "boolean"
     },
-    "date_de_depart": {
-      "type": "date"
+    "price": {
+      "type": "integer"
     },
-    "hour": {
-      "type": "time"
+    "depart": {
+      "type": "datetime"
     },
-    "ticket_code": {
-      "type": "uid"
+    "agency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agency.agency",
+      "inversedBy": "reservation"
     }
   }
 }
