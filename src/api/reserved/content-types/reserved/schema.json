@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reserveds",
+  "info": {
+    "singularName": "reserved",
+    "pluralName": "reserveds",
+    "displayName": "reserved",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reservation": {
+      "type": "json"
+    },
+    "PurchaserName": {
+      "type": "string"
+    },
+    "PurchaserMail": {
+      "type": "email"
+    },
+    "PurchaserNumber": {
+      "type": "integer"
+    },
+    "statut": {
+      "type": "boolean"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reserved"
+    }
+  }
+}
